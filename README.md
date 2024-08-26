@@ -16,7 +16,8 @@ docker compose up --build
 ```
 
 ## Использование
-Авторизация 
+### Авторизация 
+Запрос
 ```http
 POST /auth HTTP/1.1
 Host: http://localhost:8080
