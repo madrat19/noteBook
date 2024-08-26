@@ -6,3 +6,8 @@ Invoke-RestMethod -Method GET -H @{'Api-key' = 'qwerty'} http://localhost:8080/n
 Запуск curl:
 docker exec -it --user=root <containername> /bin/sh
 apk --no-cache add curl
+
+Доступ к log-фалйлу:
+docker exec -it --user=root <имя контейнера> /bin/sh
+cat app.log
+
