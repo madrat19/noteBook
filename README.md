@@ -45,7 +45,7 @@ Content-Type: application/json
 Header:
 {
    "api-key": <Your api-key>
-{
+}
 Body:
 {
   <Your note>
