@@ -19,7 +19,7 @@ docker compose up --build
 Авторизация 
 ```http
 POST /auth HTTP/1.1
-Host http://localhost:8080
+Host: http://localhost:8080
 Authorization: Basic <username:password>
 Content-Type: application/json
 ```
