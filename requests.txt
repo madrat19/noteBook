@@ -1,0 +1,8 @@
+Invoke-RestMethod -Method POST -H @{ Authorization = "Basic " + [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("alexey:12345")) } http://localhost:8080/auth
+
+Invoke-RestMethod -Method POST -H @{'Api-key' = 'meowmeow'} -Body 'Hello' -ContentType "text/plain; charset=utf-8" http://localhost:8080/notes
+Invoke-RestMethod -Method GET -H @{'Api-key' = 'qwerty'} http://localhost:8080/notes
+
+Запуск curl:
+docker exec -it --user=root <containername> /bin/sh
+apk --no-cache add curl
