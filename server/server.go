@@ -85,6 +85,7 @@ func notesHandler(writer http.ResponseWriter, request *http.Request) {
 			return
 		}
 
+		writer.WriteHeader(200)
 		writer.Header().Set("Content-Type", "application/json; charset=utf-8")
 		json.NewEncoder(writer).Encode(notes)
 
@@ -120,6 +121,7 @@ func authHandler(writer http.ResponseWriter, request *http.Request) {
 		}
 
 		response := apiKeyResponse{APIKey: apiKey}
+		writer.WriteHeader(200)
 		writer.Header().Set("Content-Type", "application/json")
 		json.NewEncoder(writer).Encode(response)
 	} else {
