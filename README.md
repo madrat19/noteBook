@@ -59,6 +59,7 @@ Content-Type: application/json
 {
   "Note saved"
 }
+```
 
 ### Получение списка заметок
 Запрос
