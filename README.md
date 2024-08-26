@@ -7,5 +7,9 @@
 ## Запуск 
 Клонировать репозиторий 
 ```bash
-git clone [https://github.com/madrat19/Messagio.git](https://github.com/madrat19/noteBook)
+git clone https://github.com/madrat19/noteBook.git
+```
+Запустить контейнеры
+```bash
+docker compose up --build
 ```
