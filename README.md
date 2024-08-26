@@ -97,4 +97,13 @@ docker exec -it --user=root <имя контейнера> /bin/sh
 cat app.log
 ```
 
+## Тестирование 
+При тестировании изнутри контейнера необходимо будет установить в него curl:
+```bash
+docker exec -it --user=root <containername> /bin/sh
+```
+```bash
+apk --no-cache add curl
+```
+
 
