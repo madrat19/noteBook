@@ -112,12 +112,12 @@ curl -X POST http://localhost:8080/auth -u Admin:12345
 
 Добавяем заметку пользователю Admin:
 ```bash
-curl -X POST http://localhost:8080/notes -H "Api-key: G3VxCoCfeSG7dt5wF0w5" -H "Content-Type: application/json; ; charset=utf-8" -d "My first note!"
+curl -X POST http://localhost:8080/notes -H "Api-key: <Ваш api-ключ>" -H "Content-Type: application/json; ; charset=utf-8" -d "My first note!"
 ```
 
 Получаем заметки пользователя Admin:
 ```bash
- curl -X GET http://localhost:8080/notes -H "Api-key: G3VxCoCfeSG7dt5wF0w5" -H "Content-Type: application/json; ; charset=utf-8"
+ curl -X GET http://localhost:8080/notes -H "Api-key: <Ваш api-ключ>" -H "Content-Type: application/json; ; charset=utf-8"
 ```
 
 
