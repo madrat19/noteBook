@@ -41,7 +41,7 @@ Content-Type: application/json
 ``` http
 POST /notes HTTP/1.1
 Host: http://localhost:8080
-Content-Type: application/json
+Content-Type: application/json; charset=utf-8
 Header:
 {
    "api-key": <Your api-key>
@@ -59,4 +59,25 @@ Content-Type: application/json
 {
   "Note saved"
 }
+
+### Получение списка заметок
+Запрос
+``` http
+GET /notes HTTP/1.1
+Host: http://localhost:8080
+Content-Type: application/json
+Header:
+{
+   "api-key": <Your api-key>
+}
+```
+
+Ответ
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+{
+  <Your notes>
+}
+
 
