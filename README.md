@@ -80,6 +80,7 @@ Content-Type: application/json; charset=utf-8
 {
   <Your notes>
 }
+```
 
 ## Пользователи
 В приложении предустановлены 3 пользователя с username и password:
