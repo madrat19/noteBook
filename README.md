@@ -17,11 +17,21 @@ docker compose up --build
 
 ## Использование
 ### Авторизация 
+
 Запрос
 ```http
 POST /auth HTTP/1.1
 Host: http://localhost:8080
 Authorization: Basic <username:password>
 Content-Type: application/json
+```
+
+Ответ
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+  "api-key": <Your api-key>
+}
 ```
 
