@@ -100,10 +100,15 @@ cat app.log
 ## Тестирование 
 При тестировании изнутри контейнера необходимо будет установить в него curl:
 ```bash
-docker exec -it --user=root <containername> /bin/sh
+docker exec -it --user=root <имя контейнера> /bin/sh
 ```
 ```bash
 apk --no-cache add curl
 ```
+Получаем api-ключ для пользователя Admin:
+```bash
+curl -X POST http://localhost:8080/auth -u Admin:12345
+```
+
 
 
