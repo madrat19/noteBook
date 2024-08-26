@@ -35,3 +35,16 @@ Content-Type: application/json
 }
 ```
 
+### Добавление заметки 
+
+Запрос
+``` http
+POST /notes HTTP/1.1
+Host: http://localhost:8080
+Content-Type: application/json
+Header:
+{
+   "api-key": <Your api-key>
+{
+```
+
