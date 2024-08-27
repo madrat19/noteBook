@@ -89,7 +89,7 @@ Content-Type: application/json; charset=utf-8
 * Ivan : qwerty
 
 ## Логирование
-Все логи сохранятются в файле app.log, получить к нему доступ можно следующим образом:
+Все логи сохраняются в файле app.log, получить к нему доступ можно следующим образом:
 ```bash
 docker exec -it --user=root <имя контейнера> /bin/sh
 ```
