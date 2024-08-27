@@ -12,7 +12,7 @@ git clone https://github.com/madrat19/noteBook.git
 ```
 Запустить контейнеры
 ```bash
-docker compose up --build
+docker compose up --build -d
 ```
 
 ## Использование
@@ -110,12 +110,12 @@ apk --no-cache add curl
 curl -X POST http://localhost:8080/auth -u Admin:12345
 ```
 
-Добавяем заметку пользователю Admin:
+Добавяем заметку пользователю по его api-ключу:
 ```bash
 curl -X POST http://localhost:8080/notes -H "Api-key: <Ваш api-ключ>" -H "Content-Type: application/json; ; charset=utf-8" -d "My first note!"
 ```
 
-Получаем заметки пользователя Admin:
+Получаем заметки пользователя по его api-ключу:
 ```bash
  curl -X GET http://localhost:8080/notes -H "Api-key: <Ваш api-ключ>" -H "Content-Type: application/json; ; charset=utf-8"
 ```
